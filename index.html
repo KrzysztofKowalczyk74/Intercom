@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <style>
+    h6 {
+      color: red;
+      text-align: center;
+      font-size: 8px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+     } 
+    h1.font {
+      font-size: 60px;
+      color: lightblue;
+      text-shadow: black 2px 2px 4px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      vertical-align: middle;
+      text-align-last: center;
+    }
+    </style>
+</head>
+<body>
+  <h1 id="btn-accept-call" class="material-icons font">call</h1>
+  <h1 id="btn-reject-call" class="material-icons font">phone_disabled</h1>
+  <h1 id="btn-end-call" class="material-icons font">call_end</h1>
+  <h1 id="btn-make-call" class="material-icons font">dialer_sip</h1>
+  <h6 id="log">Waiting...</p>
+  <audio id="remote"></audio>
+</body>
+
+<script src="jssip-3.6.1.min.js"></script>
+<script src="intercom.js"></script>
+
+<script>
+  initJsSIP();
+  if (window.location.hash === '#dev') {
+    var i = 1;
+    window.setInterval(function () { console.log(i); i++; }, 950);
+    window.setTimeout(function () { window.location.reload(); }, 10000);
+  }
+</script>
+</html>
