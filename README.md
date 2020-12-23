@@ -1,5 +1,5 @@
 # Intercom
-This is simlest possible way of communication with SIP (Asterisk) server and run communication from the web browser.
+This is simplest possible way of communication with SIP (Asterisk) server and run communication from the web browser.
 
 Current implementation of SIP for Tileboard is intercom-tiles-2.0.js.
 
