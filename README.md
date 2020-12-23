@@ -31,3 +31,4 @@ Finally - script is loaded with following command:
   loadScript('Intercom/jssip-3.6.1.min.js');
   loadScript('Intercom/intercom-tiles-2.0.js');
 
+Unfortunately I'm unable to support that code - some parts are just not mind (credits to various places on the internet)
